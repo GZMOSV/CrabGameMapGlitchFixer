@@ -55,12 +55,16 @@ namespace GlitchBoundaryFixer
             // Map-specific distance thresholds
             switch (prevMapID)
             {
+                case 5:  // Desert - check disabled due to issues
+                case 17: // Plains - check disabled due to issues
+                case 22: // Slippery Slope - check disabled due to issues
+                    return; // Skip the out-of-bounds check entirely for these maps
+
                 case 0: maxDistance = 100; break;  // Bitter Beach
                 case 1: maxDistance = 110; break;  // Blueline
                 case 2: maxDistance = 90; break;   // Cocky Containers
                 case 3: maxDistance = 100; break;  // Color Climb
                 case 4: maxDistance = 100; break;  // Crusty Rocks
-                case 5: maxDistance = 200; break;  // Desert
                 case 6: maxDistance = 100; break;  // Dorm
                 case 7: maxDistance = 100; break;  // Funky Field
                 case 8: maxDistance = 160; break;  // Glass Jump
@@ -72,12 +76,10 @@ namespace GlitchBoundaryFixer
                 case 14: maxDistance = 80; break;  // Karlson
                 case 15: maxDistance = 90; break;  // Lanky Lava
                 case 16: maxDistance = 90; break;  // Lava Lake
-                case 17: maxDistance = 210; break; // Plains
                 case 18: maxDistance = 70; break;  // Playground
                 case 19: maxDistance = 70; break;  // Playground 2
                 case 20: maxDistance = 100; break; // Return to Monke
                 case 21: maxDistance = 80; break;  // Sandstorm
-                case 22: maxDistance = 200; break; // Slippery Slope
                 case 23: maxDistance = 70; break;  // (S) Color Climb
                 case 24: maxDistance = 80; break;  // (S) Glass Jump
                 case 25: maxDistance = 70; break;  // (S) Hill
