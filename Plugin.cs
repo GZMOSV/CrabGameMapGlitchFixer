@@ -58,6 +58,10 @@ namespace GlitchBoundaryFixer
                 case 5:  // Desert - check disabled due to issues
                 case 17: // Plains - check disabled due to issues
                 case 22: // Slippery Slope - check disabled due to issues
+                case 54: // Lava Climb - check disabled due to issues
+                case 55: // Macaroni Mountain - check disabled due to issues
+                case 56: // Sussy Sandcastle - check disabled due to issues
+                case 57: // Sussy Slope - check disabled due to issues
                     return; // Skip the out-of-bounds check entirely for these maps
 
                 case 0: maxDistance = 100; break;  // Bitter Beach
@@ -111,10 +115,6 @@ namespace GlitchBoundaryFixer
                 case 51: maxDistance = 100; break; // Salty Island
                 case 52: maxDistance = 120; break; // Skybox
                 case 53: maxDistance = 90; break;  // Saucy Stage
-                case 54: maxDistance = 220; break; // Lava Climb
-                case 55: maxDistance = 190; break; // Macaroni Mountain
-                case 56: maxDistance = 210; break; // Sussy Sandcastle
-                case 57: maxDistance = 700; break; // Sussy Slope
                 case 58: maxDistance = 80; break;  // Sandy Stones
                 case 59: maxDistance = 80; break;  // Crabfields
                 case 60: maxDistance = 80; break;  // Crabheat
